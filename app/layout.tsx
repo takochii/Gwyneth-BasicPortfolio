@@ -14,7 +14,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Gwyneth Portfolio",
-  description: "A portfolio website for me, showcasing her work and projects.",
+  description: "A portfolio website for me, showcasing my work and projects.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

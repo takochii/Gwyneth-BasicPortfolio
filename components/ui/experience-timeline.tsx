@@ -15,7 +15,7 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    year: "December 2025 - Present",
+    year: "December 2025",
     title: "AWAS",
     description:
       "A web application for City Disaster Risk Reduction and Management Office (CDRRMO) and City Engineer's Office to monitor urban waterlogging and manage flood disaster risk reduction and management activities. I did the UI/UX design and helped develop the user interface using Tailwind CSS",
@@ -24,7 +24,7 @@ const experiences: Experience[] = [
     gradient: "from-emerald-500/40 via-teal-900/60 to-zinc-900",
   },
   {
-    year: "April 2026 - May 2026",
+    year: "April 2026",
     title: "WestCon",
     description:
       "A mobile application for WVSU students to serve as platform for skill exchange and collaboration. I did the UI/UX design and helped develop the user interface using Kotlin and Jetpack Compose.",
