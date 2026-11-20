@@ -2,6 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+
+  devIndicators: {
+    position: "bottom-right",
+  },
   experimental: {
     agentFeedback: true,
   },
@@ -9,6 +13,10 @@ const nextConfig: NextConfig = {
   partialPrefetching: true,
   turbopack: {
     rules: {
+      ".svg": {
+        loaders: ["@svgr/webpack"],
+        as: "*.svg",
+      },
       "*.css": {
         loaders: ["@tailwindcss/turbopack"],
         as: "*.css",
