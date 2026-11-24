@@ -54,7 +54,7 @@ export default function Home() {
           <Reveal>
             <SectionHeading
               eyebrow="03 — Projects"
-              title="Featured Projects"
+              title="Projects"
               subtitle="A selection of things I've built."
             />
           </Reveal>
