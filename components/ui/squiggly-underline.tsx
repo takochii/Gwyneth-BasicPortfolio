@@ -10,6 +10,10 @@ interface NavItem {
   href: string;
 }
 
+/**
+ * Renders nav links with an animated pink squiggle under the active section,
+ * tracking scroll position with an IntersectionObserver.
+ */
 export function SquigglyUnderline({ items }: { items: NavItem[] }) {
   const [selectedLink, setSelectedLink] = useState("#home");
 
@@ -52,8 +56,8 @@ export function SquigglyUnderline({ items }: { items: NavItem[] }) {
             key={item.href}
             href={item.href}
             onClick={() => setSelectedLink(item.href)}
-            className={`relative py-2 text-white ${
-              isSelected ? "font-semibold" : "hover:text-gray-300"
+            className={`relative py-2 text-foreground transition-colors ${
+              isSelected ? "font-semibold" : "hover:text-muted-foreground"
             }`}
           >
             {item.name}
